@@ -1,25 +1,51 @@
 .advantages {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  outline: 2px solid cyan;
+  padding-right: 30px;
+  background-color: @bg-primary-color;
+  outline: 2px solid @outline-main-color;
 }
 
 .advantages__title {
-  font-family: "PTSans", "Arial", sans-serif;
-  font-size: 18px;
+  display: block;
+  padding-top: 33px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;
-  color: #000000;
+  line-height: 22px;
+  color: @text-primary-color;
   text-transform: uppercase;
 }
 
 .advantages__text {
-  font-family: "PTSans", "Arial", sans-serif;
+  display: block;
+  margin-left: 70px;
+  margin-top: 0;
+  margin-bottom: 15px;
   font-size: 12px;
   font-weight: bold;
-  line-height: 1.2;
-  color: #000000;
+  line-height: 20px;
+  color: @text-primary-color;
   text-transform: uppercase;
+}
+
+.advantages__item {
+  &--house {
+    background: url("../img/icon-house.svg") no-repeat 23px 26px;
+    background-size: 39px 37px;
+  }
+
+  &--gift {
+    background: url("../img/icon-gift.svg") no-repeat 23px 26px;
+    background-size: 39px 37px;
+  }
+
+  &--burger {
+    background: url("../img/icon-burger.svg") no-repeat 23px 26px;
+    background-size: 39px 37px;
+  }
 }

@@ -44,21 +44,21 @@
           посещенных вами
           достопримечательностях
         </p>
-        <form name="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="feedback__form" name="feedback__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="feedback__username">
             <legend class="feedback__title">Представьтесь:</legend>
-            <label for="firstname">Имя:</label>
+            <label for="firstname">Имя*:</label>
             <input type="text" name="firstname" id="firstname" placeholder="Петр">
-            <label for="lastname">Фамилия:</label>
+            <label for="lastname">Фамилия*:</label>
             <input type="text" name="lastname" id="lastname" placeholder="Иванов">
             <label for="middlename">Отчество:</label>
             <input type="text" name="middlename" id="middlename" placeholder="Александрович">
           </fieldset>
           <fieldset class="feedback__contacts">
             <legend class="feedback__title">Контактная информация:</legend>
-            <label for="phonenumber">Контактный телефон:</label>
+            <label for="phonenumber">Контактный телефон*:</label>
             <input type="text" name="phonenumber" id="phonenumber" placeholder="Введите телефон">
-            <label for="email">Электронная почта:</label>
+            <label for="email">Электронная почта*:</label>
             <input type="text" name="email" id="email" placeholder="Введите e-mail">
           </fieldset>
           <fieldset class="feedback__effect">
@@ -70,7 +70,7 @@
             <input type="radio" name="effect--neutral" id="effect--neutral">
             <label for="effect--neutral">Затрудняюсь ответить</label>
           </fieldset>
-          <fieldset>
+          <fieldset class="feedback__places">
             <legend class="feedback__title">Посещенные достопримечательности:</legend>
             <input type="checkbox" name="bridge" id="bridge" checked>
             <label for="bridge">Мост Дъявола</label>
@@ -81,11 +81,11 @@
             <input type="checkbox" name="redrocks" id="redrocks">
             <label for="redrocks">Красные скалы</label>
           </fieldset>
-          <fieldset>
+          <fieldset class="feedback__usermessage">
             <legend class="feedback__title">Опишите свои эмоции:</legend>
-            <textarea class="feedback__feedback-text">Опишите подробно все свои восторги</textarea>
+            <textarea class="feedback__feedback-text" rows="5">Опишите подробно все свои восторги</textarea>
           </fieldset>
-          <input type="submit" value="Отправить отзыв">
+          <input class="feedback__button" type="submit" value="Отправить отзыв">
         </form>
       </section>
     </main>
@@ -94,19 +94,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/?lang=ru">Мы в твиттере</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/?lang=ru" aria-label="Мы в твиттере"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com">Мы в фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Мы в фейсбуке"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com">Мы на ютубе</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com" aria-label="Мы на ютубе"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <b class="copyright__text">Разработано</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
     <div class="modal modal--feedback-success visually-hidden">

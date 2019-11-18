@@ -1,0 +1,131 @@
+.feedback {
+  padding-top: 30px;
+  background-color: @bg-primary-color;
+}
+
+.feedback__title {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: @text-primary-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.feedback__text {
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  color: @text-primary-color;
+}
+
+.feedback__form {
+  border-top: 1px solid @text-primary-color;
+}
+
+.feedback__form .feedback__title {
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.feedback__username,
+.feedback__contacts,
+.feedback__places,
+.feedback__effect,
+.feedback__usermessage {
+  border: none;
+}
+
+.feedback__username > input[type="text"] {
+  padding: 17px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: @text-primary-color;
+  border: none;
+  background-color: @form-bg-primary-color;
+}
+
+.feedback__username > label {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.feedback__contacts > input[type="text"] {
+  margin-bottom: 10px;
+  padding: 17px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: @text-primary-color;
+}
+
+.feedback__contacts > label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.feedback__contacts input[name="phonenumber"] {
+  background: url("../img/icon-phone.svg") no-repeat 18px 18px;
+  background-position: 240px;
+  border: none;
+  background-color: @form-bg-primary-color;
+}
+
+.feedback__contacts input[name="email"] {
+  background: url("../img/icon-mail.svg") no-repeat 16px 12px;
+  background-position: 240px;
+  border: none;
+  background-color: @form-bg-primary-color;
+}
+
+.feedback__effect label {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: 45px;
+  font-weight: bold;
+}
+
+.feedback__places label {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: 45px;
+  font-weight: bold;
+}
+
+.feedback__usermessage textarea {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 41px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  border: none;
+  background-color: @form-bg-primary-color;
+}
+
+.feedback__button {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 35px;
+  padding: 20px 45px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  color: @text-secondary-color;
+  text-transform: uppercase;
+  background: @lightblue-color;
+  border: none;
+}
