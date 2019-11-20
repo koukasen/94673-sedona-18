@@ -1,8 +1,23 @@
 .page-header {
+  display: flex;
+  height: 306px;
+  flex-direction: column-reverse;
+  background: linear-gradient(to bottom, @bg-primary-color 80%, transparent 20%);
   outline: 2px solid @outline-main-color;
+}
+
+.page-header__logo {
+  height: 83px;
 }
 
 .page-header__logo-image {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    order: 2;
+    height: 400px;
+  }
 }
